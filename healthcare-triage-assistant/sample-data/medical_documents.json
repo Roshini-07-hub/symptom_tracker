@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Understanding the Common Cold",
+    "category": "condition",
+    "content": "The common cold is a viral infection of the upper respiratory tract. It is usually self-limiting and most adults recover within 7-10 days. Common symptoms include congestion, cough, sore throat, and sneezing. Complications are rare in healthy individuals.",
+    "tags": ["cold", "viral", "respiratory", "common"],
+    "language": "en"
+  },
+  {
+    "title": "Influenza (Flu) Symptoms and Management",
+    "category": "condition",
+    "content": "Influenza is a contagious respiratory illness caused by flu viruses. Symptoms typically appear 1-4 days after infection and include fever, cough, fatigue, and body aches. Most people recover within a week to 10 days, but pneumonia and other complications can occur. Annual vaccination is recommended.",
+    "tags": ["flu", "influenza", "respiratory", "viral", "fever"],
+    "language": "en"
+  },
+  {
+    "title": "Pneumonia Recognition and When to Seek Care",
+    "category": "condition",
+    "content": "Pneumonia is an infection that inflames the air sacs in one or both lungs. Symptoms include cough with phlegm, fever, chills, and difficulty breathing. Seek immediate medical attention if experiencing severe symptoms, shortness of breath, or symptoms in elderly or immunocompromised individuals.",
+    "tags": ["pneumonia", "respiratory", "serious", "infection"],
+    "language": "en"
+  },
+  {
+    "title": "Fever Management in Adults",
+    "category": "treatment",
+    "content": "Fever is a sign that your body is fighting an infection. For most adults, a fever below 102°F (39°C) is not dangerous. Treatment includes rest, hydration, and over-the-counter antipyretics like acetaminophen or ibuprofen. Seek medical attention if fever persists beyond 3 days or accompanies severe symptoms.",
+    "tags": ["fever", "treatment", "symptom management"],
+    "language": "en"
+  },
+  {
+    "title": "Cough Types and When to Worry",
+    "category": "symptom",
+    "content": "Coughs can be dry or productive (with mucus) and are often part of cold or flu. Most coughs resolve within 3 weeks. However, seek medical attention if cough persists longer than 3 weeks, produces blood, or accompanies shortness of breath or chest pain.",
+    "tags": ["cough", "respiratory", "symptom"],
+    "language": "en"
+  },
+  {
+    "title": "Sore Throat: Causes and Treatment",
+    "category": "condition",
+    "content": "Sore throats are usually caused by viral infections and don't require antibiotics. Symptoms typically last 3-7 days. Relief measures include warm liquids, throat lozenges, and over-the-counter pain relievers. Seek care if fever is high or difficulty swallowing develops.",
+    "tags": ["sore throat", "viral", "treatment"],
+    "language": "en"
+  },
+  {
+    "title": "Headaches: When to Seek Medical Attention",
+    "category": "symptom",
+    "content": "Most headaches are not serious, but seek immediate medical attention for sudden severe headache, headache with fever and stiff neck, headache after head injury, or headache accompanied by vision changes. Milder headaches can often be managed with rest and over-the-counter pain relievers.",
+    "tags": ["headache", "neurological", "warning signs"],
+    "language": "en"
+  },
+  {
+    "title": "Nausea and Vomiting Management",
+    "category": "treatment",
+    "content": "Nausea and vomiting can result from various causes including viral infections, food poisoning, or medication side effects. Management includes small sips of clear fluids, ginger, and rest. Seek medical attention if vomiting persists for more than a few hours, is accompanied by severe pain, or shows signs of dehydration.",
+    "tags": ["nausea", "vomiting", "gastrointestinal"],
+    "language": "en"
+  },
+  {
+    "title": "Body Aches and Muscle Pain",
+    "category": "symptom",
+    "content": "Muscle aches (myalgia) are common during viral infections like the flu. They typically resolve as the infection clears. Management includes rest, hydration, and over-the-counter anti-inflammatory medications. Seek care if pain is severe or accompanied by other concerning symptoms.",
+    "tags": ["body aches", "muscle pain", "viral"],
+    "language": "en"
+  },
+  {
+    "title": "Fatigue and When to Be Concerned",
+    "category": "symptom",
+    "content": "Fatigue during illness is normal as your body fights infection. Rest and proper nutrition help recovery. However, seek medical attention if fatigue is severe, persistent beyond typical illness duration, accompanied by fever, or interferes with daily functioning.",
+    "tags": ["fatigue", "tiredness", "symptom"],
+    "language": "en"
+  }
+]

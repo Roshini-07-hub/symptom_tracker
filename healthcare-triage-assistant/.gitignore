@@ -1,0 +1,76 @@
+# .gitignore for Healthcare Triage Assistant
+
+## Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+## Environment variables
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.development.local
+
+## IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+## Build directories
+build/
+dist/
+.next/
+out/
+
+## Testing
+coverage/
+.nyc_output/
+
+## Production
+*.tgz
+.pem
+.key
+
+## Logs
+logs/
+*.log
+lerna-debug.log*
+
+## Dependencies
+package-lock.json
+yarn.lock
+
+## OS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+## Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+.cache/
+temp/
+
+## Database
+*.db
+*.sqlite
+*.sqlite3
+data/
+
+## Backend specific
+backend/uploads/
+backend/temp/
+backend/.pem
+
+## Frontend specific
+frontend/build/
+frontend/.next/

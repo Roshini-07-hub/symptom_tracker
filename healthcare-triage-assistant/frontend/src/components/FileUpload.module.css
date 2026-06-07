@@ -1,0 +1,268 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.uploadSection {
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.uploadSection h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-color, #667eea);
+  font-size: 1.25rem;
+}
+
+.uploadSection p {
+  margin: 0 0 1.5rem 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.uploadArea {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.fileInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: 2px dashed var(--primary-color, #667eea);
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.fileInput:hover:not(:disabled) {
+  background: rgba(102, 126, 234, 0.05);
+  border-color: var(--secondary-color, #059669);
+}
+
+.fileInput input {
+  display: none;
+}
+
+.fileInput .icon {
+  font-size: 2rem;
+  color: var(--primary-color, #667eea);
+  margin-bottom: 0.5rem;
+}
+
+.fileInput span {
+  font-weight: 600;
+  color: #374151;
+}
+
+.selectedFile {
+  background: #e0e7ff;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color, #667eea);
+  width: 100%;
+}
+
+.selectedFile p {
+  margin: 0;
+  color: #374151;
+  font-weight: 500;
+}
+
+.selectedFile small {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.uploadBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, var(--primary-color, #667eea) 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.uploadBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.uploadBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  padding: 1rem;
+  background: #fee2e2;
+  color: #991b1b;
+  border-left: 4px solid #dc2626;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.success {
+  padding: 1rem;
+  background: #dcfce7;
+  color: #15803d;
+  border-left: 4px solid #22c55e;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.reportsSection {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.reportsSection h3 {
+  margin: 0 0 1.5rem 0;
+  color: var(--primary-color, #667eea);
+  font-size: 1.25rem;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.loading .spinner {
+  font-size: 2rem;
+  color: var(--primary-color, #667eea);
+}
+
+.noReports {
+  text-align: center;
+  color: #6b7280;
+  padding: 2rem;
+  font-style: italic;
+}
+
+.reportsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reportItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.reportItem:hover {
+  background: #f3f4f6;
+  border-color: var(--primary-color, #667eea);
+}
+
+.reportInfo {
+  flex: 1;
+}
+
+.reportInfo h4 {
+  margin: 0;
+  color: #374151;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.reportInfo small {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.deleteBtn {
+  padding: 0.5rem;
+  background: #fee2e2;
+  color: #dc2626;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.deleteBtn:hover {
+  background: #fecaca;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .uploadSection,
+  .reportsSection {
+    padding: 1.5rem;
+  }
+
+  .fileInput {
+    padding: 1.5rem;
+  }
+
+  .fileInput .icon {
+    font-size: 1.5rem;
+  }
+
+  .reportItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .deleteBtn {
+    align-self: flex-end;
+  }
+}

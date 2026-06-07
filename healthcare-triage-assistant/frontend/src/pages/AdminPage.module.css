@@ -1,0 +1,218 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-md);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: var(--dark-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.header p {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-lg);
+  border-left: 4px solid var(--danger-color);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.statCard {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: flex-start;
+}
+
+.statIcon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.statContent {
+  flex: 1;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-sm);
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.statSubtext {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.card {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.card h2 {
+  color: var(--dark-color);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.3rem;
+}
+
+.riskList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.riskItem {
+  display: grid;
+  grid-template-columns: 80px 1fr 50px;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.riskLabel {
+  font-weight: 600;
+  color: var(--dark-color);
+  text-transform: capitalize;
+  font-size: 0.85rem;
+}
+
+.riskBar {
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.riskFill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.riskCount {
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: right;
+}
+
+.symptomList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.symptomItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background-color: #f3f4f6;
+  border-radius: var(--border-radius);
+  text-transform: capitalize;
+}
+
+.symptomName {
+  color: var(--dark-color);
+  font-weight: 500;
+}
+
+.symptomCount {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.activityGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.activityItem {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background-color: #f3f4f6;
+  border-radius: var(--border-radius);
+}
+
+.activityLabel {
+  color: #6b7280;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-sm);
+}
+
+.activityCount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .riskItem {
+    grid-template-columns: auto 1fr;
+  }
+
+  .riskCount {
+    grid-column: 1 / -1;
+    text-align: left;
+  }
+}
